@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cellphone S</title>
+	<link rel="stylesheet" type="text/css" href="./css/banhang.css">
+</head>
+<body>
+	<header class="sticky-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 menu">
+					<img src="uploads/LOGO.png">
+				</div>
+				<div class="col-2">
+					
+				</div>
+				<div class="col-8 menu">
+					<ul>
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="./sanpham.html">Sản phẩm</a></li>
+						<li><a href="./gopy.html">Góp ý</a></li>
+						<li><a href="./dangnhap.html">Đăng nhập</a></li>
+						<li><a href="./dangky.html">Đăng ký</a></li>
+                        <li><a href="./banhang.html">Bán Hàng</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="tittle">
+        <h2>Bán hàng</h2>
+    </div>
+
+    <div class="mucgia">
+        <select name="price" id="filter">
+                <option value="0">Chọn mức giá</option>
+                <option value="1">Dưới 100</option>
+                <option value="2">Từ 100 đến 500</option>
+                <option value="3">Trên 500</option>
+    </select>
+    </div>
+
+    <div class="container" style="width: 70% !important;">
+        <table class="table table-bordered ">
+            <thead>
+                <tr>
+                    <td><input type="checkbox" id="checkAll"></td>
+                    <th>Hàng hóa</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>Iphone</td>
+                    <td>700</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>SamSung</td>
+                    <td>400</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>msi</td>
+                    <td>100</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>mackbook</td>
+                    <td>450</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>acer</td>
+                    <td>180</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>lenovo</td>
+                    <td>600</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>acer-vivo</td>
+                    <td>90</td>
+                    <td><input type="number" value="0" min="0" step="1" disabled></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Tổng</th>
+                    <th id="tongtien"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+</div>
+<script src="./js/banhang.js"></script>
+
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row footer">
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<h3>TITLE</h3>
+					<ul class="menu_footer">
+						<li><a href="">ASUS</a></li>
+						<li><a href="">DELL</a></li>
+						<li><a href="">MAC</a></li>
+						<li><a href="">MSI</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+</body>
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += "active";
+		  setTimeout(showSlides, 1000);
+		}
+</script>
+
+<div class="support">
+	<img src="./uploads/hotro.png" alt="" class="support__img">
+	<span class="support__not"></span>
+</div>
+<div class="help">
+	<div class="header">
+		<div class="header__img">
+			<img src="../img/favicon_io/favicon.ico" alt="">
+		</div>
+		<div class="header__title">
+			<h3 class="title">Hổ trợ khách hàng</h3>
+			<p class="desc"> Chúng tôi sẽ phản hồi trong giây lát...</p>
+		</div>
+		<i class="fas fa-times close-icon"></i>
+	</div>
+	<div class="body">
+		<span class="staff">Nhân viên FPT</span>
+		<div class="message">
+			<p class="">&ensp; Chào bạn, FPT đã sẵn sàng giải đáp thắc mắc cho bạn. Bạn cần tư vấn những vấn đề gì?</p>
+		</div>
+		<button class="advise">Tư vấn sản phẩm </button>
+		<button class="care">Chăm sóc khách hàng</button>
+		<input type="text" placeholder="Hãy nhập gì đó..." class="import">
+	</div>
+</div>
+</div>
+
+<script>
+const help = document.querySelector(".help");
+const support = document.querySelector(".support");
+const close = document.querySelector(".close-icon");
+support.addEventListener("click", function (event) {
+	help.classList.add("is-show");
+	support.classList.add("is-hidden");
+});
+close.addEventListener("click", function (event) {
+	help.classList.remove("is-show");
+	support.classList.remove("is-hidden");
+});
+// const adressbtn = document.querySelector("#adress-form");
+// const adressClass = document.querySelector(".adress-form");
+// adressbtn.addEventListener("click",function(){
+//     adressClass.style.display="flex";
+// });
+AOS.init();
+</script>
+</html>

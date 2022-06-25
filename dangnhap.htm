@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dangnhap.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <form class="forrm-login">
+            <h1>Đăng nhập</h1>
+            <div class="from-text">
+                <label for="">Username</label>
+                <input type="text">
+            </div>
+            <div class="from-text">
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <button>Đăng nhập</button>
+            <span>Bạn chưa có tài khoản? Đăng ký <a href="./dangky.html">Tại đây</a></span>
+        </form>
+    </section>
+    
+    <script>
+        const fromLogin = document.querySelectorAll('.form-text input');
+        const fromLabel = document.querySelectorAll('.form-text label');
+        for (let i = 0; i < 2; i++) {
+            fromLogin[i].addEventListener("mouseover", function () {
+                fromLabel[i].classList.add("focus")
+            })
+            fromLogin[i].addEventListener("mouseout", function () {
+                if (fromLogin[i].value =="") {
+                    fromLabel[i].classList.remove("focus")
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
